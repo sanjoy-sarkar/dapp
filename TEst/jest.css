@@ -1,0 +1,170 @@
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set box-sizing to border-box for all elements */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Apply basic styles to the entire app */
+.App {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #686060;
+}
+
+/* Header styles */
+.header {
+  background-color: transparent;
+  padding: 20px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect-wallet-button {
+  display: inline-block;
+  background-color: #0edee6;
+  color: #111111fa;
+  text-align: center;
+  border: none;
+  padding: 15px 35px;
+  font-size: 21px;
+  border-radius: 35px;
+  cursor: pointer;
+}
+
+.connect-wallet-button:hover {
+  background-color: #01ffc0;
+}
+
+.connect-wallet-button:active {
+  background-color: #ff0101;
+}
+
+/* Main styles */
+.main {
+  margin-top: 40px;
+}
+
+.middle-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.middle-wrapper {
+  display: flex;
+  /* align-items: flex-start; */
+}
+
+.middle-panels {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.middle-media {
+  width: 700px;
+  margin-bottom: 24px;
+}
+
+.middle-text {
+  font-size: 45px;
+  font-weight: bold;
+  padding: 50px;
+}
+
+/* SalePanel styles */
+.SalePanel_panel {
+  border: 1px solid #0edee6;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 17px;
+  text-align: center;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.SalePanel_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.SalePanel_date {
+  font-size: 14px;
+  color: #999;
+}
+
+/* TimeCounter styles */
+.TimeCounter_timers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.TimeCounter_timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TimeCounter_circle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.TimeCounter_circle-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.TimeCounter_time-unit {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #f0f0f0;
+  padding: 16px;
+  text-align: center;
+}
+
+.footer-menu {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.footer-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-social-link {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .middle-media {
+    width: 100%;
+  }
+}
